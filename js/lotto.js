@@ -6,6 +6,7 @@ const ballThree = document.querySelector("#ball-three");
 const ballFour = document.querySelector("#ball-four");
 const ballFive = document.querySelector("#ball-five");
 const ballSix = document.querySelector("#ball-six");
+const select = document.querySelector("#select");
 
 let lottoNumber = [];
 
@@ -124,6 +125,17 @@ const paintNum = (event) => {
 
   // 색 선택 함수
   colorCheck();
+
+  // 추출된 번호들 표시
+  let saveNum = [];
+  const testNum = [];
+  const saveLottoNumber = (saveNum = lottoNum);
+  const li = document.createElement("li");
+  li.innerText = saveLottoNumber;
+  testNum.push(saveLottoNumber);
+  select.appendChild(li);
+  // console.log(saveNum);
+  console.log(testNum);
 };
 
 btn.addEventListener("click", paintNum);
