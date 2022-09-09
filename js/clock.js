@@ -40,7 +40,7 @@ const paintDay = () => {
     whatDays = "토요일";
   }
 
-  day.innerText = `현재 시각은 ${year}년 ${month}월 ${getDate}일 ${whatDays}입니다. 로또추첨은 매주 토요일 19시에 진행됩니다.`;
+  day.innerText = `현재 시각은 ${year}년 ${month}월 ${getDate}일 ${whatDays}입니다. 로또추첨은 매주 토요일 20시 34분에 진행됩니다.`;
 };
 
 paintDay();
