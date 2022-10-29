@@ -13,7 +13,7 @@ const paintDay = () => {
   const date = new Date();
   const days = date.getDay();
   const year = date.getFullYear();
-  const month = date.getMonth();
+  const month = date.getMonth() + 1;
   const getDate = date.getDate();
 
   let whatDays = "";
